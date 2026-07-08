@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>كردو عفرين</title>
 
 <style>
@@ -15,12 +14,14 @@ font-family:Tahoma,sans-serif;
 }
 
 body{
-background:url("afrin.jpg") center center/cover no-repeat;
+background:url("afrin.png") no-repeat center center;
+background-size:cover;
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 position:relative;
+overflow:hidden;
 }
 
 body::before{
@@ -37,59 +38,60 @@ background:rgba(0,0,0,.45);
 position:relative;
 z-index:2;
 width:90%;
-max-width:380px;
+max-width:400px;
 text-align:center;
-color:white;
+color:#fff;
 }
 
 h1{
 font-size:46px;
-margin-bottom:10px;
+margin-bottom:15px;
+text-shadow:2px 2px 8px #000;
 }
 
-h2{
-font-size:28px;
-margin-bottom:20px;
+.line{
+font-size:34px;
+margin-bottom:25px;
+color:#ffd54f;
 }
 
 p{
-font-size:20px;
+font-size:22px;
 line-height:1.8;
-margin-bottom:40px;
+margin-bottom:45px;
+text-shadow:1px 1px 5px #000;
 }
 
 .btn{
 display:block;
 width:100%;
 padding:18px;
-margin:15px 0;
-border:none;
+margin:18px 0;
 border-radius:18px;
-font-size:24px;
-cursor:pointer;
 text-decoration:none;
+font-size:24px;
+font-weight:bold;
+transition:.3s;
 }
 
 .login{
 background:#2e7d32;
-color:white;
+color:#fff;
 }
 
 .register{
-background:white;
+background:#fff;
 color:#2e7d32;
-font-weight:bold;
 }
 
 .skip{
-display:block;
-margin-top:30px;
-color:white;
+display:inline-block;
+margin-top:20px;
 font-size:22px;
+color:#fff;
 text-decoration:none;
 }
 </style>
-
 </head>
 
 <body>
@@ -98,7 +100,10 @@ text-decoration:none;
 
 <h1>👋</h1>
 
-<h2>مرحباً بكم<br>في موقع كردو عفرين</h2>
+<div class="line">
+مرحباً بكم<br>
+في موقع كردو عفرين
+</div>
 
 <p>
 اربح من الألعاب، اجمع النقاط،
