@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>إنشاء حساب | Kurd Rewards</title>
+<title>إنشاء حساب</title>
 
 <style>
 body{
@@ -17,11 +18,11 @@ body{
 }
 
 .container{
-    background:white;
-    padding:30px;
-    border-radius:15px;
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
     width:320px;
-    box-shadow:0 0 10px rgba(0,0,0,.2);
+    box-shadow:0 0 15px rgba(0,0,0,.2);
 }
 
 h2{
@@ -53,10 +54,11 @@ a{
     display:block;
     text-align:center;
     margin-top:15px;
-    text-decoration:none;
     color:#2e7d32;
+    text-decoration:none;
 }
 </style>
+
 </head>
 
 <body>
@@ -80,15 +82,16 @@ a{
 </div>
 
 <script>
+
 function register(){
 
-let name=document.getElementById("name").value;
-let email=document.getElementById("email").value;
+let name=document.getElementById("name").value.trim();
+let email=document.getElementById("email").value.trim();
 let password=document.getElementById("password").value;
 let confirm=document.getElementById("confirm").value;
 
-if(name==="" || email==="" || password===""){
-alert("يرجى ملء جميع الحقول");
+if(name==""||email==""||password==""||confirm==""){
+alert("يرجى تعبئة جميع الحقول");
 return;
 }
 
@@ -106,6 +109,7 @@ alert("تم إنشاء الحساب بنجاح");
 window.location.href="login.html";
 
 }
+
 </script>
 
 </body>
