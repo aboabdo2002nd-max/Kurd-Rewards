@@ -7,23 +7,26 @@
 
 <style>
 body{
-    margin:0;
     font-family:Arial,sans-serif;
     background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
 }
 
 .container{
-    max-width:400px;
-    margin:50px auto;
-    background:#fff;
-    padding:25px;
+    background:white;
+    padding:30px;
     border-radius:15px;
-    box-shadow:0 2px 10px rgba(0,0,0,.15);
+    width:320px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
 }
 
-h1{
+h2{
     text-align:center;
-    color:#2d7d46;
+    color:#2e7d32;
 }
 
 input{
@@ -38,8 +41,8 @@ input{
 button{
     width:100%;
     padding:12px;
-    background:#2d7d46;
-    color:#fff;
+    background:#2e7d32;
+    color:white;
     border:none;
     border-radius:8px;
     font-size:18px;
@@ -50,18 +53,17 @@ a{
     display:block;
     text-align:center;
     margin-top:15px;
-    color:#2d7d46;
     text-decoration:none;
+    color:#2e7d32;
 }
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>إنشاء حساب</h1>
+<h2>إنشاء حساب</h2>
 
 <input type="text" id="name" placeholder="الاسم الكامل">
 
@@ -80,13 +82,24 @@ a{
 <script>
 function register(){
 
+let name=document.getElementById("name").value;
+let email=document.getElementById("email").value;
 let password=document.getElementById("password").value;
 let confirm=document.getElementById("confirm").value;
+
+if(name==="" || email==="" || password===""){
+alert("يرجى ملء جميع الحقول");
+return;
+}
 
 if(password!==confirm){
 alert("كلمتا المرور غير متطابقتين");
 return;
 }
+
+localStorage.setItem("name",name);
+localStorage.setItem("email",email);
+localStorage.setItem("password",password);
 
 alert("تم إنشاء الحساب بنجاح");
 
