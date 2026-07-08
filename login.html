@@ -77,18 +77,17 @@ a{
 
 <script>
 function login(){
+    let email = document.getElementById("email").value;
+let password = document.getElementById("password").value;
 
-let email=document.getElementById("email").value;
-let password=document.getElementById("password").value;
+let savedEmail = localStorage.getItem("email");
+let savedPassword = localStorage.getItem("password");
 
-let savedEmail=localStorage.getItem("email");
-let savedPassword=localStorage.getItem("password");
-
-if(email===savedEmail && password===savedPassword){
-alert("تم تسجيل الدخول بنجاح");
-window.location.href="index.html";
-}else{
-alert("البريد الإلكتروني أو كلمة المرور غير صحيحة");
+if (email === savedEmail && password === savedPassword) {
+    alert("تم تسجيل الدخول بنجاح");
+    window.location.href = "index.html";
+} else {
+    alert("البريد الإلكتروني أو كلمة المرور غير صحيحة");
 }
 
 }
