@@ -3,13 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>الألعاب</title>
+<title>Kurd Rewards</title>
 
 <style>
-body{
+*{
 margin:0;
-font-family:Arial;
-background:#f5f5f5;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f4f4;
 }
 
 header{
@@ -17,70 +22,145 @@ background:#2e7d32;
 color:white;
 padding:20px;
 text-align:center;
-font-size:30px;
+font-size:26px;
+font-weight:bold;
 }
 
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
+.profile{
+background:white;
+margin:15px;
 padding:20px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+.profile h2{
+color:#2e7d32;
+margin-bottom:10px;
+}
+
+.points{
+font-size:28px;
+font-weight:bold;
+color:#ff9800;
+margin-top:10px;
+}
+
+.section{
+margin:15px;
+}
+
+.section h3{
+color:#2e7d32;
+margin-bottom:10px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+padding:15px;
+margin-bottom:15px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
 }
 
 .game{
-background:white;
-border-radius:15px;
-padding:25px;
-text-align:center;
-font-size:22px;
-font-weight:bold;
-box-shadow:0 4px 12px rgba(0,0,0,.15);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 0;
+border-bottom:1px solid #ddd;
 }
 
-a{
+.game:last-child{
+border:none;
+}
+
+.button{
+display:block;
+background:#2e7d32;
+color:white;
+text-align:center;
+padding:15px;
+border-radius:12px;
 text-decoration:none;
-color:black;
+font-size:18px;
+margin-top:15px;
+}
+
+.bottom-nav{
+position:fixed;
+bottom:0;
+right:0;
+left:0;
+background:white;
+display:flex;
+justify-content:space-around;
+padding:15px;
+box-shadow:0 -2px 10px rgba(0,0,0,.2);
+}
+
+.bottom-nav a{
+text-decoration:none;
+color:#2e7d32;
+font-weight:bold;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-🎮 الألعاب
+Kurd Rewards
 </header>
 
-<div class="grid">
-
-<a href="#">
-<div class="game">
-🧩<br>
-لعبة الألغاز
+<div class="profile">
+<h2>👤 مرحباً بك</h2>
+<p>رصيد النقاط</p>
+<div class="points">2,560 ⭐</div>
 </div>
-</a>
-
-<a href="#">
-<div class="game">
-🏎️<br>
-سباق السيارات
+<div class="points">2,560 ⭐</div>
 </div>
-</a>
 
-<a href="#">
+<div class="section">
+<h3>🎮 الألعاب</h3>
+
+<div class="card">
+
 <div class="game">
-🎯<br>
-التصويب
+<span>Subway Surfers</span>
+<span>+150 ⭐</span>
 </div>
-</a>
 
-<a href="#">
 <div class="game">
-🧠<br>
-اختبار الذكاء
+<span>Candy Crush</span>
+<span>+200 ⭐</span>
 </div>
-</a>
 
+<div class="game">
+<span>8 Ball Pool</span>
+<span>+180 ⭐</span>
+</div>
+
+<div class="game">
+<span>Temple Run 2</span>
+<span>+190 ⭐</span>
+</div>
+
+</div>
+
+<a href="#" class="button">🎁 استبدال الجوائز</a>
+
+<a href="#" class="button">💰 السحب إلى Binance</a>
+
+<a href="#" class="button">💳 السحب إلى ShamCash</a>
+
+</div>
+
+<div class="bottom-nav">
+<a href="#">🏠 الرئيسية</a>
+<a href="#">🎮 الألعاب</a>
+<a href="#">⭐ النقاط</a>
+<a href="#">👤 حسابي</a>
 </div>
 
 </body>
