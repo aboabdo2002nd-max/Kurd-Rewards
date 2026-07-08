@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إنشاء حساب - كردو عفرين</title>
 
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Tahoma,sans-serif;
+}
+
+body{
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80");
+background-size:cover;
+background-position:center;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.box{
+width:90%;
+max-width:380px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(8px);
+padding:25px;
+border-radius:20px;
+text-align:center;
+}
+
+h2{
+color:white;
+font-size:34px;
+margin-bottom:25px;
+}
+
+input{
+width:100%;
+padding:16px;
+margin:10px 0;
+border:none;
+border-radius:12px;
+font-size:18px;
+outline:none;
+}
+
+button{
+width:100%;
+padding:16px;
+margin-top:20px;
+background:#2e7d32;
+color:white;
+border:none;
+border-radius:12px;
+font-size:22px;
+font-weight:bold;
+cursor:pointer;
+}
+
+a{
+display:block;
+margin-top:20px;
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>إنشاء حساب جديد</h2>
+
+<input type="text" placeholder="الاسم الكامل">
+
+<input type="email" placeholder="البريد الإلكتروني">
+
+<input type="password" placeholder="كلمة المرور">
+
+<input type="password" placeholder="تأكيد كلمة المرور">
+
+<button onclick="location.href='home.html'">
+إنشاء حساب
+</button>
+
+<a href="login.html">
+لديك حساب؟ تسجيل الدخول
+</a>
+
+</div>
+
+</body>
+</html>
