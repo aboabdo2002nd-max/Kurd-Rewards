@@ -3,99 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<h1>🎉 مرحباً بكم في موقع كردو عفرين 🎉</h1>
+<title>كردو عفرين</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Tahoma,sans-serif;
+}
+
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f5f5f5;
-text-align:center;
-}
-
-header{
-background:#2d7d46;
-color:white;
-padding:40px 20px;
-}
-
-h1{
-margin:0;
-font-size:38px;
-}
-
-p{
-font-size:18px;
+background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80");
+background-size:cover;
+background-position:center;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
 .container{
-padding:30px;
+width:90%;
+max-width:380px;
+text-align:center;
+color:white;
 }
 
-.card{
-background:white;
-margin:20px auto;
-padding:20px;
+h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+p{
+font-size:22px;
+margin-bottom:50px;
+}
+
+.btn{
+display:block;
+width:100%;
+padding:16px;
+margin:15px 0;
+border:none;
 border-radius:15px;
-max-width:500px;
-box-shadow:0 3px 10px rgba(0,0,0,.15);
+font-size:22px;
+cursor:pointer;
+text-decoration:none;
 }
 
-.button{
-display:inline-block;
-margin-top:20px;
-padding:15px 35px;
-background:#2d7d46;
+.login{
+background:#2e7d32;
+color:white;
+}
+
+.register{
+background:white;
+color:#2e7d32;
+}
+
+.skip{
+display:block;
+margin-top:25px;
 color:white;
 text-decoration:none;
-border-radius:10px;
-font-size:20px;
-}
-
-footer{
-margin-top:40px;
-padding:20px;
-background:#222;
-color:white;
+font-size:22px;
 }
 </style>
+
 </head>
 
 <body>
 
-<header>
-<p>اربح من موقع كردو عفرين، العب الألعاب واجمع النقاط واستبدلها بأموال حقيقية.</p>
-
-</header>
-
 <div class="container">
 
-<div class="card">
-<h2>💰 كيف يعمل التطبيق؟</h2>
-<p>العب الألعاب داخل التطبيق، اجمع النقاط، ثم استبدلها بدولارات أو اسحبها إلى Binance وShamCash.</p>
-</div>
+<h1>🎉 مرحباً بكم في موقع كردو عفرين 🎉</h1>
 
-<div class="card">
-<h2>⭐ المميزات</h2>
-<p>🎮 ألعاب متنوعة</p>
-<p>💵 1000 نقطة = 1 دولار</p>
-<p>🪙 السحب إلى Binance</p>
-<p>💳 السحب إلى ShamCash</p>
-<p>🌍 دعم العربية والكردية</p>
-</div>
+<p>اربح من الألعاب، اجمع النقاط، واستبدلها بجوائز حقيقية.</p>
 
-<a class="button" href="#">📥 تحميل التطبيق قريبًا</a>
-<div style="text-align:center; margin:20px;">
-  <a href="register.html" class="button">إنشاء حساب</a>
-</div>
+<a class="btn login" href="login.html">تسجيل الدخول</a>
 
-<div style="text-align:center; margin:20px;">
-  <a href="login.html" class="button">تسجيل الدخول</a>
+<a class="btn register" href="register.html">إنشاء حساب جديد</a>
+
+<a class="skip" href="home.html">تخطي الآن</a>
+
 </div>
-  
-<footer>
-© 2026 Kurd Rewards
-</footer>
 
 </body>
 </html>
