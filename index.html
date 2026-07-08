@@ -14,52 +14,48 @@ font-family:Tahoma,sans-serif;
 }
 
 body{
-background:url("afrin.png") no-repeat center center;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80");
 background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-position:relative;
-overflow:hidden;
-}
-
-body::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.45);
 }
 
 .container{
-position:relative;
-z-index:2;
 width:90%;
 max-width:400px;
 text-align:center;
-color:#fff;
+color:white;
+}
+
+.wave{
+font-size:60px;
+margin-bottom:15px;
 }
 
 h1{
-font-size:46px;
-margin-bottom:15px;
-text-shadow:2px 2px 8px #000;
+font-size:48px;
+margin-bottom:10px;
+text-shadow:2px 2px 8px black;
 }
 
-.line{
-font-size:34px;
-margin-bottom:25px;
-color:#ffd54f;
+h2{
+font-size:32px;
+margin-bottom:30px;
+color:#FFD54F;
+text-shadow:2px 2px 8px black;
 }
 
 p{
-font-size:22px;
-line-height:1.8;
+font-size:24px;
+line-height:1.7;
 margin-bottom:45px;
-text-shadow:1px 1px 5px #000;
+text-shadow:2px 2px 8px black;
 }
 
 .btn{
@@ -69,26 +65,26 @@ padding:18px;
 margin:18px 0;
 border-radius:18px;
 text-decoration:none;
-font-size:24px;
+font-size:28px;
 font-weight:bold;
 transition:.3s;
 }
 
 .login{
-background:#2e7d32;
-color:#fff;
+background:#2E7D32;
+color:white;
 }
 
 .register{
-background:#fff;
-color:#2e7d32;
+background:white;
+color:#2E7D32;
 }
 
 .skip{
 display:inline-block;
-margin-top:20px;
-font-size:22px;
-color:#fff;
+margin-top:25px;
+font-size:28px;
+color:white;
 text-decoration:none;
 }
 </style>
@@ -98,27 +94,26 @@ text-decoration:none;
 
 <div class="container">
 
-<h1>👋</h1>
+<div class="wave">👋</div>
 
-<div class="line">
-مرحباً بكم<br>
-في موقع كردو عفرين
-</div>
+<h1>مرحباً بكم</h1>
+
+<h2>في موقع كردو عفرين</h2>
 
 <p>
 اربح من الألعاب، اجمع النقاط،
 واستبدلها بجوائز حقيقية.
 </p>
 
-<a href="login.html" class="btn login">
+<a class="btn login" href="login.html">
 تسجيل الدخول
 </a>
 
-<a href="register.html" class="btn register">
+<a class="btn register" href="register.html">
 إنشاء حساب جديد
 </a>
 
-<a href="#" class="skip">
+<a class="skip" href="#">
 تخطي الآن
 </a>
 
