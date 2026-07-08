@@ -70,7 +70,16 @@ a{
 
 <input type="password" placeholder="تأكيد كلمة المرور">
 
-<button>إنشاء الحساب</button>
+<button onclick="register()">
+    إنشاء الحساب
+</button>
+
+<script>
+function register() {
+    alert("تم إنشاء الحساب بنجاح");
+    window.location.href = "login.html";
+}
+</script>
 
 <a href="login.html">لديك حساب؟ تسجيل الدخول</a>
 
