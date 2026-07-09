@@ -3,17 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>تسجيل الدخول</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Cairo',sans-serif;
+font-family:Cairo,sans-serif;
 }
 
 body{
@@ -25,17 +22,17 @@ height:100vh;
 }
 
 .box{
-width:90%;
-max-width:400px;
-background:white;
+background:#fff;
 padding:25px;
 border-radius:18px;
+width:90%;
+max-width:400px;
 box-shadow:0 0 15px rgba(0,0,0,.15);
 }
 
 h1{
 text-align:center;
-margin-bottom:25px;
+margin-bottom:20px;
 color:#176b2d;
 }
 
@@ -52,7 +49,7 @@ button{
 width:100%;
 padding:15px;
 background:#176b2d;
-color:white;
+color:#fff;
 border:none;
 border-radius:10px;
 font-size:18px;
@@ -65,13 +62,12 @@ text-align:center;
 margin-top:20px;
 }
 
-a{
+.link a{
 color:#176b2d;
 text-decoration:none;
 font-weight:bold;
 }
 </style>
-
 </head>
 
 <body>
@@ -100,6 +96,48 @@ placeholder="كلمة المرور">
 </div>
 
 </div>
+
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+import {
+getAuth,
+signInWithEmailAndPassword
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+const firebaseConfig = {
+apiKey: "AIzaSyA9sZqWXkpb2jMhUKp9g7q19AdRKQEYUm0",
+authDomain: "kurdo-afrin-rewards.firebaseapp.com",
+projectId: "kurdo-afrin-rewards",
+storageBucket: "kurdo-afrin-rewards.firebasestorage.app",
+messagingSenderId: "791345182925",
+appId: "1:791345182925:web:2c1bcb618e83e83fc61184"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+document.getElementById("loginBtn").addEventListener("click", async () => {
+
+const email = document.getElementById("email").value.trim();
+const password = document.getElementById("password").value;
+
+if (!email || !password) {
+alert("يرجى إدخال البريد الإلكتروني وكلمة المرور");
+return;
+}
+
+try {
+await signInWithEmailAndPassword(auth, email, password);
+alert("تم تسجيل الدخول بنجاح");
+window.location.href = "index.html";
+} catch (error) {
+alert(error.message);
+}
+
+});
+
+</script>
 
 </body>
 </html>
