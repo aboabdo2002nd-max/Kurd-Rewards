@@ -1,68 +1,125 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>كردو عفرين</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<title>كردو عفرين</title>
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:'Cairo',sans-serif;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-    body{
-      background:#f5f5f5;
-    }
+<style>
 
-    header{
-      background:#176b2d;
-      color:white;
-      padding:25px 20px 40px;
-      border-radius:0 0 30px 30px;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
 
-    .top{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      font-size:28px;
-    }
+body{
+background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;
+height:100vh;
+color:white;
+}
 
-    .logo{
-      text-align:center;
-      margin-top:10px;
-      font-size:30px;
-      font-weight:bold;
-    }
+.overlay{
+width:100%;
+height:100%;
+background:rgba(0,0,0,.45);
+display:flex;
+justify-content:center;
+align-items:center;
+padding:30px;
+}
 
-    .welcome{
-      text-align:center;
-      margin-top:8px;
-      opacity:.9;
-      font-size:16px;
-    }
-  </style>
+.container{
+width:100%;
+max-width:500px;
+text-align:center;
+}
+
+.hand{
+font-size:70px;
+margin-bottom:15px;
+}
+
+h2{
+font-size:55px;
+font-weight:800;
+text-shadow:3px 3px 8px rgba(0,0,0,.6);
+}
+
+h1{
+font-size:70px;
+font-weight:800;
+margin-top:10px;
+text-shadow:3px 3px 8px rgba(0,0,0,.6);
+}
+
+.desc{
+font-size:25px;
+margin-top:25px;
+line-height:1.8;
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-  <div class="top">
-    <span>☰</span>
-    <span>🔔</span>
-  </div>
+<div class="overlay">
+<div class="container">
 
-  <div class="logo">كردو عفرين</div>
+<div class="hand">👋</div>
 
-  <p class="welcome">
-    اكسب نقاطًا واستبدلها بمكافآت حقيقية
-  </p>
-</header>
+<h2>مرحب
+  <a href="login.html" class="btn login">
+تسجيل الدخول
+</a>
+
+<a href="signup.html" class="btn signup">
+إنشاء حساب جديد
+</a>
+
+<a href="home.html" class="skip">
+تخطي الآن
+</a>
+
+</div>
+</div>
+
+<style>
+.btn{
+display:block;
+width:100%;
+padding:18px;
+margin-top:18px;
+border-radius:15px;
+font-size:22px;
+font-weight:bold;
+text-decoration:none;
+transition:.3s;
+}
+
+.login{
+background:#1f7a34;
+color:#fff;
+}
+
+.signup{
+background:#fff;
+color:#1f7a34;
+}
+
+.skip{
+display:inline-block;
+margin-top:25px;
+color:#fff;
+font-size:20px;
+text-decoration:none;
+}
+</style>
 
 </body>
 </html>
