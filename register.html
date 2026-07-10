@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>إنشاء حساب - كردو عفرين</title>
+<title>إنشاء حساب</title>
 
 <style>
 *{
@@ -14,65 +14,57 @@ font-family:Tahoma,sans-serif;
 }
 
 body{
-background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80");
-background-size:cover;
-background-position:center;
-height:100vh;
+background:#f5f5f5;
 display:flex;
 justify-content:center;
 align-items:center;
+height:100vh;
 }
 
 .box{
 width:90%;
-max-width:380px;
-background:rgba(255,255,255,.12);
-backdrop-filter:blur(8px);
+max-width:400px;
+background:white;
 padding:25px;
-border-radius:20px;
-text-align:center;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,.2);
 }
 
 h2{
-color:white;
-font-size:34px;
-margin-bottom:25px;
+text-align:center;
+margin-bottom:20px;
+color:#2e7d32;
 }
 
 input{
 width:100%;
-padding:16px;
-margin:10px 0;
-border:none;
-border-radius:12px;
-font-size:18px;
-outline:none;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:10px;
+font-size:16px;
 }
 
 button{
 width:100%;
-padding:16px;
-margin-top:20px;
+padding:15px;
 background:#2e7d32;
 color:white;
 border:none;
-border-radius:12px;
-font-size:22px;
+border-radius:10px;
+font-size:18px;
 font-weight:bold;
 cursor:pointer;
 }
 
 a{
 display:block;
-margin-top:20px;
-color:white;
+text-align:center;
+margin-top:15px;
+color:#2e7d32;
 text-decoration:none;
-font-size:18px;
 }
 </style>
-
 </head>
 
 <body>
@@ -81,23 +73,21 @@ font-size:18px;
 
 <h2>إنشاء حساب جديد</h2>
 
-<input type="text" placeholder="الاسم الكامل">
+<input id="name" type="text" placeholder="الاسم الكامل">
 
-<input type="email" placeholder="البريد الإلكتروني">
+<input id="email" type="email" placeholder="البريد الإلكتروني">
 
-<input type="password" placeholder="كلمة المرور">
+<input id="password" type="password" placeholder="كلمة المرور">
 
-<input type="password" placeholder="تأكيد كلمة المرور">
+<input id="confirmPassword" type="password" placeholder="تأكيد كلمة المرور">
 
-<button onclick="location.href='home.html'">
-إنشاء حساب
-</button>
+<button id="signupBtn">إنشاء حساب</button>
 
-<a href="login.html">
-لديك حساب؟ تسجيل الدخول
-</a>
+<a href="login.html">لديك حساب؟ تسجيل الدخول</a>
 
 </div>
+
+<script type="module" src="signup.js"></script>
 
 </body>
 </html>
