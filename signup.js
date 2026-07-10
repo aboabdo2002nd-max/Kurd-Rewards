@@ -12,7 +12,6 @@ import {
 const signupBtn = document.getElementById("signupBtn");
 
 signupBtn.addEventListener("click", async () => {
-
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
@@ -45,7 +44,7 @@ signupBtn.addEventListener("click", async () => {
     window.location.href = "login.html";
 
   } catch (error) {
-    alert(error.message);
+    console.log(error);
+    alert(error.code + "\n" + error.message);
   }
-
 });
