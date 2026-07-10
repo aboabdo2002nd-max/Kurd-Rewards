@@ -99,23 +99,11 @@ placeholder="كلمة المرور">
 
 <script type="module">
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+import { auth } from "./firebase-config.js";
+
 import {
-getAuth,
-signInWithEmailAndPassword
-} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
-
-const firebaseConfig = {
-apiKey: "AIzaSyA9sZqWXkpb2jMhUKp9g7q19AdRKQEYUm0",
-authDomain: "kurdo-afrin-rewards.firebaseapp.com",
-projectId: "kurdo-afrin-rewards",
-storageBucket: "kurdo-afrin-rewards.firebasestorage.app",
-messagingSenderId: "791345182925",
-appId: "1:791345182925:web:2c1bcb618e83e83fc61184"
-};
-
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+  signInWithEmailAndPassword
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 document.getElementById("loginBtn").addEventListener("click", async () => {
 
