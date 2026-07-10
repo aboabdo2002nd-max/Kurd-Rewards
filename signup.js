@@ -9,9 +9,9 @@ import {
   setDoc
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-const btn = document.getElementById("signupBtn");
+const signupBtn = document.getElementById("signupBtn");
 
-btn.addEventListener("click", async () => {
+signupBtn.addEventListener("click", async () => {
 
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
